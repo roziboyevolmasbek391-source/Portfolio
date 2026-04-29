@@ -1,0 +1,43 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero h1 {
+  font-size: 72px;
+  line-height: 1.1;
+  max-width: 700px;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.hero-buttons a {
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 600;
+   transition: all 0.3s ease;
+  background: #0f172a;
+  color: white;
+}
+
+.hero-buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+body.dark .hero-buttons a {
+  background: white;
+  color: black;
+}

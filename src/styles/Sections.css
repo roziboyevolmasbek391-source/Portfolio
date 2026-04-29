@@ -1,0 +1,35 @@
+.about,
+.contact,
+.footer {
+  text-align: center;
+}
+
+.about p,
+.contact p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+}
+
+body.dark .skill-card {
+  background: #1e293b;
+}
+
+.footer {
+  padding-bottom: 50px;
+}
