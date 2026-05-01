@@ -4,6 +4,7 @@ const projects = [
     {
         title: "Mini Telegram",
         desc: "Realtime messaging application",
+        link: "https://chat-production-2d79.up.railway.app/",
     },
     {
         title: "Mini Ai",
@@ -22,10 +23,12 @@ function Projects() {
 
             <div className='project-grid'>
                 {projects.map((project, index) => (
-                    <div className="project-card" key={index}>
-                        <h2>{project.title}</h2>
-                        <p>{project.desc}</p>
-                    </div>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" key={index} className={project.link ? "project-card-link" : ""}>
+                        <div className="project-card">
+                            <h2>{project.title}</h2>
+                            <p>{project.desc}</p>
+                        </div>
+                    </a>
                 ))}
             </div>
         </section>

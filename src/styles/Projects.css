@@ -5,6 +5,11 @@
   margin-top: 40px;
 }
 
+.project-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .project-card {
   padding: 28px;
   border-radius: 20px;
